@@ -14,5 +14,5 @@ for files in os.listdir(path):
         print(files)
         if not files.startswith('.') and not files.startswith('README')and not files.startswith('LICENSE'):
             with Image.open(path + files) as im:
-                im=im.convert('RGB').resize((600, 400))
-                im=im.save(path + files, 'jpeg', quality=100)
+                im2=im.convert('RGB').resize((600, 400))
+                im3=im2.save(path + files, 'jpeg', quality=100)
