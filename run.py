@@ -32,4 +32,4 @@ for file in text_files:
 
 #for image in image_files:
 
-print(list)
+print(*list, sep = "\n")
