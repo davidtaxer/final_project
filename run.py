@@ -38,7 +38,7 @@ print('The following descriptions will be uploaded:')
 print(*list, sep = "\n" "\n")
 print("")
 
-#  Uploading the descriptions and images
+#  Uploading the descriptions and images.
 for item in list:
     resp = requests.post('http://34.134.195.119/fruits/', json=item)
     if resp.status_code != 201:
